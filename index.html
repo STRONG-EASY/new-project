@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,26 +16,26 @@
     <link rel="shortcut icon" href="IMG/Flavicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="background-image: url(IMG/image1.jpg);">
+  
+  <header>
+    <nav>
+      <h1>LOGO</h1>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <header class="header">
-      <div class="menu container">
-        <a href="#" class="logo">LOGO</a>
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-          <img src="IMG/menu.png" class="menu-icono" alt="" />
-        </label>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
+  </header>
+
       </div>
       <div class="header-content container">
-        <h1>Nuestra Historia</h1>
+
+        <h2>Nuestra Historia</h2>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum
           animi quas asperiores alias molestiae beatae optio necessitatibus vero
@@ -138,7 +139,6 @@
 
           <div class="testi-left">
             <div class="testi-txt">
-              <img src="IMG/Fondo2.jpg" alt="">
               <h3>Lorem</h3>
               <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem consequatur, fugiat incidunt minus ea maxime beatae nisi dolores iure quae possimus quidem eius, voluptatibus nobis officiis tempora quos ratione.
@@ -147,7 +147,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem 
 
             </div>
             <div class="testi-txt">
-              <img src="IMG/Fondo1.jpg" alt="">
               <h3>Lorem</h3>
               <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem consequatur, fugiat incidunt minus ea maxime beatae nisi dolores iure quae possimus quidem eius, voluptatibus nobis officiis tempora quos ratione.
@@ -159,7 +158,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem 
         </div>
         <div class="testi-right">
           <div class="testi-txt">
-            <img src="IMG/image2.jpg" alt="">
+            
             <h3>Lorem</h3>
             <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem consequatur, fugiat incidunt minus ea maxime beatae nisi dolores iure quae possimus quidem eius, voluptatibus nobis officiis tempora quos ratione.
@@ -171,18 +170,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem 
 
     </section>
 
-    <footer class="footer container">
-      <h2>Contacto</h2>
-
-      <form>
-        <input class="campo" type="text" placeholder="nombre">
-        <input class="campo" type="email" placeholder="email">
-        <input type="submit" class="btn-2" value="enviar">
-      </form>
-      <div class="footer-text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorum aliquam, repudiandae ipsum libero magnam dolores beatae esse quibusdam eum modi, suscipit nihil voluptatem laudantium, velit dolorem voluptates et enim?
-        </p>
+    <footer>
+<form action="https://formsubmit.co/your@email.com" method="POST">
+  <h2>Contacto</h2>
+  <div class="input-group">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name" placeholder="Nombre">
+    <label for="phone">Telefono</label>
+    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="email">
+    <label for="message">Mensaje</label>
+    <textarea name="message" id="message" cols="20" rows="1" placeholder="Mensaje"></textarea>
+    <div class="form-txt">
+      <a href="#">Politica de privacidad</a>
+      <a href="#">Terminos y condiciones</a>
+    </div>
+<input class="btn" type="submit" value="Enviar">
+  </div>
+</form>
 
       </div>
 

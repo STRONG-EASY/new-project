@@ -29,54 +29,123 @@ body.poppins-thin {
   align-items: center;
 }
 
-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
 }
 
-.logo {
+h1 {
   color: black;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 35px;
+}
+ul li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.menu .navbar ul li {
-  position: relative;
-  float: left;
-}
-
-.menu .navbar ul li a {
-  font-size: 18px;
-  padding: 20px;
+a {
   color: black;
-  display: block;
-  font-weight: 600;
+  text-decoration: none;
 }
 
-#menu {
-  display: none;
+body {
+  background-image: url(IMG/image1.jpg);
+  background-position: center center;
+  background-repeat: no repeat;
+  background-image: auto;
+  background-attachment: fixed;
 }
 
-.menu-icono {
-  width: 25px;
+footer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu label {
-  cursor: pointer;
-  display: none;
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
 }
-
-.header-txt {
+.input-group {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.header-txt h1 {
-  font-size: 85px;
+h2 {
   color: black;
+  font-size: 35px;
+}
+
+label {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  border: 2px solid whitesmoke;
+  color: black;
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: antiquewhite;
+}
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 16px;
+  color: black;
+  border: 0;
+  border-radius: 25px;
+  background-color: grey;
+  box-shadow: 0 0 20px rgb(93, 0, 254);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: grey;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+
+  input {
+    padding: 15px;
+  }
 }
